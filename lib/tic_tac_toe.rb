@@ -72,7 +72,7 @@ end
 
 # winner method code #################################################################################
 
-def winner(board,index)
+def winner(board)
   
   if won?(board) 
     return board[index]
