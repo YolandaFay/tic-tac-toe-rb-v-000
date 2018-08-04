@@ -74,8 +74,10 @@ end
 
 def winner(board)
   
-  if won?(board) 
-    return board[index]
+  if won?(board) && turn_count(board) % 2 == 0 
+    return "X"
+  elsif won?(board) && turn_count(board) % 2 != 0
+    return "O"
   end
 end
 
