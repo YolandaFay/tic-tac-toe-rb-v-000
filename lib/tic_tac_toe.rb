@@ -27,6 +27,15 @@ def won?(board)
     
 end
 
+def empty?(board)
+  board.each do |entry|
+      if entry != " "
+       return false 
+     end
+    end
+  return true 
+end
+
 # full? method code #################################################################################
 
 def full?(board)
