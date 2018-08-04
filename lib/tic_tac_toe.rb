@@ -63,7 +63,7 @@ end
 
 def over?(board)
   
-  if full?(board) == true || draw?(board) == true || won?(board) != false
+  if full?(board)  || draw?(board) || !won?(board) 
     return true 
   else
     return false 
@@ -74,8 +74,8 @@ end
 
 def winner(board)
   
-  if won?(board) != false  
-    return board[won?(board)[0]]
+  if won?(board) 
+    return board[]
   end
 end
 
