@@ -79,6 +79,7 @@ def winner(board)
   elsif won?(board) && turn_count(board) % 2 != 0
     return "O"
   end
+  
 end
 
 # display_board method code ############################################################################
